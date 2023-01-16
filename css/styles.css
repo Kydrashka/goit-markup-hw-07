@@ -329,17 +329,17 @@ h4 {
   border-radius: 4px;
 }
 
-.modal-input:focus~.modal-input-svg {
+.modal-list__input:focus~.modal-list__svg {
   fill: var(--accent-text-color);
 }
 
-.modal-input:focus,
+.modal-list__input:focus,
 .modal-textarea:focus {
   border-color: var(--accent-text-color);
   outline: none;
 }
 
-.modal-input-svg {
+.modal-list__svg {
   position: absolute;
   top: 12px;
   left: 11px;
@@ -347,7 +347,7 @@ h4 {
   height: 18px;
 }
 
-.modal-textarea {
+.modal-list__textarea {
   display: block;
   width: 448px;
   margin-top: 4px;
@@ -363,26 +363,27 @@ h4 {
   padding-bottom: 12px;
   padding-left: 16px;
   padding-right: 16px;
+  outline: none;
 }
 
-.checkbox-label {
+.modal-list__checkbox-label {
   display: inline-block;
   position: relative;
 }
 
-.checkbox {
+.modal-list__checkbox {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.checkbox-svg {
+.modal-list__checkbox-svg {
   width: 16px;
   height: 15px;
 }
 
-.checkbox:checked+.checkbox-svg {
+.modal-list__checkbox:checked+.modal-list__checkbox-svg {
   fill: var(--accent-text-color);
   background-color: var(--accent-text-color);
   border-radius: 2px;
@@ -390,7 +391,7 @@ h4 {
   background-size: contain;
 }
 
-.checkbox-focus-svg {
+.modal-list__checkbox-focus-svg {
   position: absolute;
   top: 0;
   left: 0;
@@ -400,40 +401,17 @@ h4 {
   background-size: contain;
 }
 
-.checkbox-text {
+.modal-list__checkbox-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.checkbox-link {
+.modal-list__checkbox-link {
   color: var(--accent-text-color);
 }
 
-
-
-.photo-worker {
-  display: flex;
-}
-
-.feature-list {
-  flex-wrap: wrap;
-}
-
-.feature-list-item {
-  width: 270px;
-  text-align: start;
-}
-
-.feature-list-item+.feature-list-item {
-  margin-left: 30px;
-
-}
-
-.list {
-  padding-bottom: 94px;
-  background-color: var(--secondary-background-color);
-}
+/* section 2 */
 
 .section-features {
   padding-top: 94px;
@@ -444,19 +422,36 @@ h4 {
   padding-bottom: 0;
 }
 
-.about-us-container {
-  padding-top: 94px;
+.feature-list__item {
+  width: 270px;
+  text-align: start;
+  margin-left: 30px;
 }
 
+.feature-list__item--no-margin {
+  margin-left: 0px;
+}
 
+.feature-list__icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  margin-bottom: 30px;
+  border: 0;
+}
 
-
+.feature-list__svg {
+  margin: auto;
+  width: 70px;
+  height: 70px;
+}
 
 .title {
   color: var(--title-text-color);
 }
 
-.title-head {
+.feature-list__title-head {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 14px;
@@ -465,10 +460,18 @@ h4 {
   text-transform: uppercase;
 }
 
-.title-paragraph {
+.feature-list__title-paragraph {
+  text-align: start;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+/* section 3 */
+
+
+.what-we-do {
+  padding-bottom: 94px;
 }
 
 .title-info {
@@ -480,29 +483,17 @@ h4 {
   margin-bottom: 50px;
 }
 
-.title-names {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.title-position {
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-
-.what-we-do-item {
+.what-we-do__item {
   position: relative;
   line-height: 0;
+  margin-left: 30px;
 }
 
-.what-we-do-text {
+.what-we-do__item--no-margin {
+  margin-left: 0;
+}
+
+.what-we-do__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -524,21 +515,27 @@ h4 {
   color: #FFFFFF;
 }
 
-.what-we-do-item+.what-we-do-item {
-  margin-left: 30px;
+/* section 4 */
+
+.about-us-section {
+  padding-top: 94px;
 }
 
-.what-we-do-section {
-  padding-bottom: 94px;
-}
-
-.about-us-item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+.about-us-section__item {
+  box-shadow:
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  margin-left: 30px;
 }
 
-.about-us-item+.about-us-item {
-  margin-left: 30px;
+.about-us-section__item--no-margin {
+  margin-left: 0px;
+}
+
+.about-us-section__photo {
+  display: flex;
 }
 
 .title-info-item {
@@ -547,19 +544,20 @@ h4 {
   background-color: #ffffff;
 }
 
-.icon-feature {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  background-color: #F5F4FA;
-  margin-bottom: 30px;
-  border: 0;
+.title-names {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.icon-feature-svg {
-  margin: auto;
-  width: 70px;
-  height: 70px;
+.title-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .title-social {
@@ -603,7 +601,10 @@ h4 {
   fill: currentColor;
 }
 
-
+.list {
+  padding-bottom: 94px;
+  background-color: var(--secondary-background-color);
+}
 
 
 /* section 5 */

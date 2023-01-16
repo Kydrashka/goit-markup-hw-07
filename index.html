@@ -84,7 +84,7 @@
               <label class="modal-list__label">
                 <span class="modal-list__text">Ім'я</span>
                 <input class="modal-list__input" type="text" name="name" />
-                <svg class="modal-input-svg">
+                <svg class="modal-list__svg">
                   <use href="./images/icons.svg#icon-person-black-18dp-1" width="18" height="18"></use>
                 </svg>
               </label>
@@ -93,7 +93,7 @@
               <label class="modal-list__label">
                 <span class="modal-list__text">Телефон</span>
                 <input class="modal-list__input" type="tel" />
-                <svg class="modal-input-svg">
+                <svg class="modal-list__svg">
                   <use href="./images/icons.svg#icon-phone-black-18dp-1" width="18" height="18"></use>
                 </svg>
               </label>
@@ -102,7 +102,7 @@
               <label class="modal-list__label">
                 <span class="modal-list__text">Пошта</span>
                 <input class="modal-list__input" type="email" name="email" />
-                <svg class="modal-input-svg">
+                <svg class="modal-list__svg">
                   <use href="./images/icons.svg#icon-Vector" width="18" height="18"></use>
                 </svg>
               </label>
@@ -110,20 +110,21 @@
             <li class="modal-list__element">
               <label class="modal-list__label">
                 <span class="modal-list__text">Коментар</span>
-                <textarea class="modal-textarea" name="textarea" id="textarea" rows="7"
+                <textarea class="modal-list__textarea" name="textarea" id="textarea" rows="7"
                   placeholder="Введіть текст"></textarea>
               </label>
             </li>
             <li class="modal-list__element modal-list__element--margin-bottom">
-              <label class="checkbox-label">
-                <input class="checkbox" type="checkbox" name="checkbox">
-                <svg class="checkbox-svg">
+              <label class="modal-list__checkbox-label">
+                <input class="modal-list__checkbox" type="checkbox" name="checkbox">
+                <svg class="modal-list__checkbox-svg">
                   <use href="./images/icons.svg#icon-checkbox" width="16" height="15"></use>
                 </svg>
-                <svg class="checkbox-focus-svg">
+                <svg class="modal-list__checkbox-focus-svg">
                   <use href="./images/icons.svg#icon-Vector-1" width="16" height="15"></use>
                 </svg>
-                <span class="checkbox-text">Погоджуюся з розсилкою та приймаю <a class="checkbox-link" href="">Умови
+                <span class="modal-list__checkbox-text">Погоджуюся з розсилкою та приймаю <a
+                    class="modal-list__checkbox-link" href="">Умови
                     договору</a></span>
               </label>
             </li>
@@ -137,74 +138,77 @@
       <div class="container container-null">
         <h2></h2>
         <ul class="list-style feature-list">
-          <li class="feature-list-item">
-            <div class="icon-feature">
-              <svg class="icon-feature-svg">
+          <li class=" item feature-list__item--no-margin">
+            <div class="feature-list__icon">
+              <svg class="feature-list__svg">
                 <use href="./images/icons.svg#icon-antenna-1" widht="70px" height="70px"></use>
               </svg>
             </div>
-            <h3 class="title title-head">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="title-paragraph">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            <h3 class="title feature-list__title-head">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="feature-list__title-paragraph">Ідейні міркування, і навіть початок повсякденної роботи з
+              формування позиції.</p>
           </li>
-          <li class="feature-list-item">
-            <div class="icon-feature">
-              <svg class="icon-feature-svg">
+          <li class="feature-list__item">
+            <div class="feature-list__icon">
+              <svg class="feature-list__svg">
                 <use href="./images/icons.svg#icon-clock-1" widht="70px" height="70px"></use>
               </svg>
             </div>
-            <h3 class="title title-head">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="title-paragraph">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+            <h3 class="title feature-list__title-head">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="feature-list__title-paragraph">Завдання організації, особливо рамки і місце навчання кадрів тягне
+              у себе.</p>
           </li>
-          <li class="feature-list-item">
-            <div class="icon-feature">
-              <svg class="icon-feature-svg">
+          <li class="feature-list__item">
+            <div class="feature-list__icon">
+              <svg class="feature-list__svg">
                 <use href="./images/icons.svg#icon-diagram-1" widht="70px" height="70px"></use>
               </svg>
             </div>
-            <h3 class="title title-head">ПЛАНУВАННЯ</h3>
-            <p class="title-paragraph">Так само консультація з широким активом значною мірою зумовлює.</p>
+            <h3 class="title feature-list__title-head">ПЛАНУВАННЯ</h3>
+            <p class="feature-list__title-paragraph">Так само консультація з широким активом значною мірою зумовлює.</p>
           </li>
-          <li class="feature-list-item">
-            <div class="icon-feature">
-              <svg class="icon-feature-svg">
+          <li class="feature-list__item">
+            <div class="feature-list__icon">
+              <svg class="feature-list__svg">
                 <use href="./images/icons.svg#icon-astronaut-1" widht="70px" height="70px"></use>
               </svg>
             </div>
-            <h3 class="title title-head">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="title-paragraph">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+            <h3 class="title feature-list__title-head">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="feature-list__title-paragraph">Значимість цих проблем настільки очевидна, що реалізація планових
+              завдань.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <!--setion3-->
-    <section class="what-we-do-section">
+    <!--section 3-->
+    <section class="what-we-do">
       <div class="container">
         <h2 class="title title-info">Чим ми займаємося</h2>
         <ul class="list-style">
-          <li class="what-we-do-item">
+          <li class="what-we-do__item what-we-do__item--no-margin ">
             <img src="./images/what-we-do1.jpg" alt="людина друкує на ноутбуці" width="370">
-            <p class="what-we-do-text">Десктопні додатки</p>
+            <p class="what-we-do__text">Десктопні додатки</p>
           </li>
-          <li class="what-we-do-item">
+          <li class="what-we-do__item">
             <img src="./images/what-we-do2.jpg" alt="людиина дивиться у телефон" width="370">
-            <p class="what-we-do-text">Мобільні додатки</p>
+            <p class="what-we-do__text">Мобільні додатки</p>
           </li>
-          <li class="what-we-do-item">
+          <li class="what-we-do__item">
             <img src="./images/what-we-do3.jpg" alt="людина вибирає градієнт" width="370">
-            <p class="what-we-do-text">Дизайнерські рішення</p>
+            <p class="what-we-do__text">Дизайнерські рішення</p>
           </li>
         </ul>
       </div>
     </section>
 
     <!--section 4-->
-    <section class="list about-us-container">
+    <section class="list about-us-section">
       <div class="container">
         <h2 class="title title-info">Наша команда</h2>
         <ul class="list-style">
-          <li class="about-us-item">
-            <img class="photo-worker" src="./images/product-designer.jpg" alt="продакт-дизайнер" width="270">
+          <li class="about-us-section__item about-us-section__item--no-margin">
+            <img class="about-us-section__photo" src="./images/product-designer.jpg" alt="продакт-дизайнер" width="270">
             <div class="title-info-item">
               <h3 class="title title-names">Ігор Дем'яненко</h3>
               <p class="title-position">Product Designer</p>
@@ -240,8 +244,9 @@
               </ul>
             </div>
           </li>
-          <li class="about-us-item">
-            <img class="photo-worker" src="./images/frontend-developer.jpg" alt="фронтенд розробник" width="270">
+          <li class="about-us-section__item">
+            <img class="about-us-section__photo" src="./images/frontend-developer.jpg" alt="фронтенд розробник"
+              width="270">
             <div class="title-info-item">
               <p class="title title-names">Ольга Рєпіна</p>
               <p class="title-position">Frontend Developer</p>
@@ -277,8 +282,8 @@
               </ul>
             </div>
           </li>
-          <li class="about-us-item">
-            <img class="photo-worker" src="./images/marketing.jpg" alt="маркетолог" width="270">
+          <li class="about-us-section__item">
+            <img class="about-us-section__photo" src="./images/marketing.jpg" alt="маркетолог" width="270">
             <div class="title-info-item">
               <p class="title title-names">Микола Тарасов</p>
               <p class="title-position">Marketing</p>
@@ -314,8 +319,8 @@
               </ul>
             </div>
           </li>
-          <li class="about-us-item">
-            <img class="photo-worker" src="./images/ui-designer.jpg" alt="ЮІ-дизайнер" width="270">
+          <li class="about-us-section__item">
+            <img class="about-us-section__photo" src="./images/ui-designer.jpg" alt="ЮІ-дизайнер" width="270">
             <div class="title-info-item">
               <p class="title title-names">Михайло Єрмаков</p>
               <p class="title-position">UI Designer</p>
